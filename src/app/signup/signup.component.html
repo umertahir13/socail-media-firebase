@@ -1,0 +1,95 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 p-5">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fname">First Name</label>
+            <input type="text"
+                   class="form-control"
+                   id="fname"
+                   placeholder="First Name"
+                   name="fname"
+                   ngModel
+                   required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lname">Last Name</label>
+            <input type="text"
+                   class="form-control"
+                   id="lname" name="lname"
+                   placeholder="Last Name"
+                   ngModel
+                   required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email"
+                   class="form-control"
+                   id="email"
+                   placeholder="123@mail.com"
+                   name="email"
+                   ngModel
+                   required email>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="pass">Password</label>
+            <input type="password"
+                   class="form-control"
+                   id="pass"
+                   name="pass"
+                   placeholder="password"
+                   ngModel
+                   required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Cpass">Conform Password</label>
+            <input type="password"
+                   class="form-control"
+                   id="Cpass"
+                   name="Cpass"
+                   placeholder="confrom Password"
+                   ngModel
+                   required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="city">City</label>
+            <input type="text"
+                   class="form-control"
+                   id="city"
+                   name="city"
+                   placeholder="City"
+                   ngModel
+                   required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="country">Country</label>
+            <input type="text"
+                   class="form-control"
+                   id="country"
+                   name="country"
+                   placeholder="Country"
+                   ngModel
+                   required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputZip">Zip</label>
+            <input type="text"
+                   class="form-control"
+                   id="inputZip"
+                   name="zip"
+                   placeholder="Zip"
+                   ngModel
+                   required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!f.valid">SignUp</button>
+      </form>
+
+    </div>
+  </div>
+</div>
